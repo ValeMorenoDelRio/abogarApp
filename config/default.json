@@ -1,0 +1,4 @@
+{
+    "mongoURI": "keyHere",
+    "jwtSecret": "keyHere"
+}
