@@ -26,11 +26,11 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Ingresa</h1>
+      <h1 className='text-primary medium-font'>Ingresa</h1>
       <p className='lead'>
-        <i className='fas fa-user' /> Ingresa en tu cuenta
+        <i className='fas fa-user' /> Ingresa en tu cuenta 
       </p>
-      <form className='form' onSubmit={e => onSubmit(e)}>
+      <form className='form ' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <input
               id='email-input'
@@ -56,7 +56,7 @@ const Login = ({ login, isAuthenticated }) => {
         <input type='submit' className='btn btn-primary' value='Ingresa' />
       </form>
       <p className='my-1'>
-        No tienes cuenta? <Link to='/register'>Registrate ahora!</Link>
+        No tienes cuenta? <Link className='orange-color' to='/register'>Registrate ahora!</Link>
       </p>
     </Fragment>
   );

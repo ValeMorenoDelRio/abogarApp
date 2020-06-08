@@ -10,7 +10,7 @@ import PrivateRoute from '../routing/PrivateRoute';
 
 const Routes = () => {
   return (
-    <section className='container'>
+    <section className='container default-container align-left'>
       <Alert />
       <Switch>
         <Route exact path='/register' component={Register} />

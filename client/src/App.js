@@ -25,7 +25,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Navbar />
+          <Navbar className='grid-columns-2'/>
           <Switch>
             <Route exact path='/' component={Login} />
             <Route component={Routes} />
