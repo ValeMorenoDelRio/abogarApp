@@ -43,12 +43,12 @@
   a:hover {
       color: var(--violet-color);
   }
-
-  ul.links-container li:last-of-type {
-    margin-left: 20px;
+ul.links-container li:last-of-type {
+  margin-right: 0px;
 }
 ul.links-container li {
   display: inline-block;
+  margin-right: 20px;
 }
 ul.links-container {
   display: flex;

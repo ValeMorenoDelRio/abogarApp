@@ -22,7 +22,6 @@ const Dashboard = ({
       <p className='lead'>
         Bienvenido {user && user.firstName}
       </p>
-      <Link to='./meeting-room'> adasd</Link>
     </Fragment>
   );
 };
