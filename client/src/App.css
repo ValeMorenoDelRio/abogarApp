@@ -53,7 +53,7 @@ ul.links-container li {
 ul.links-container {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .logo-container {
   text-align: left;
