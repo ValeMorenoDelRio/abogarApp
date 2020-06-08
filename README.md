@@ -64,10 +64,6 @@ Remember to change to `"name"` in the `package.json` and in the `package-lock.js
 
 Feel Free to report bug or contribute to improve this boilerplate
 
-## Author
-
-Paolo D'Elia
-
 ## License
 
 MIT

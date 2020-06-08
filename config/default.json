@@ -1,4 +1,4 @@
 {
-    "mongoURI": "keyHere",
-    "jwtSecret": "keyHere"
+    "mongoURI": "mongodb+srv://Mauro105:mauro105@cluster0-wy2hi.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "F62365E959B5F307313E90691F4DDF547C31953740C8EA13A624FBA6F68E2675"
 }

@@ -11,10 +11,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     lastName: '',
     email: '',
     password: '',
-    password2: ''
+    password2: '',
+    isLawyer: false
   });
 
-  const { firstName,lastName, email, password, password2 } = formData;
+  const { firstName,lastName, email, password, password2, isLawyer } = formData;
 
   const onChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,7 +25,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     if (password !== password2) {
       setAlert('Passwords do not match', 'danger');
     } else {
-      register({ firstName,lastName, email, password });
+      register({ firstName,lastName, email, password, isLawyer });
     }
   };
 

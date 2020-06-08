@@ -7,6 +7,7 @@ import Dashboard from '../dashboard/Dashboard';
 import Cpanel from '../cpanel/cpanel';
 import NotFound from '../layout/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
+import RegisterLawyer from '../auth/RegisterLawyer';
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
       <Alert />
       <Switch>
         <Route exact path='/register' component={Register} />
+        <Route exact path='/register-lawyer' component={RegisterLawyer} />
         <Route exact path='/login' component={Login} />
         <PrivateRoute exact path='/dashboard' component={Dashboard} />
         <PrivateRoute exact path='/cpanel' component={Cpanel} />

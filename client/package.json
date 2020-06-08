@@ -42,8 +42,6 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
     "redux-mock-store": "^1.5.4"
   },
   "transform": {
