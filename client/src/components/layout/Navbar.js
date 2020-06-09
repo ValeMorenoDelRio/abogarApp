@@ -46,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <img src={image1}  alt='logo' width="120" height="80" />
       <img src={image2}  alt='logo2' width="70" height="30" />
       </a>
-      {!loading && (
+      {!loading || (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}
     </nav>

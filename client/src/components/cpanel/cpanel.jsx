@@ -47,7 +47,7 @@ const Cpanel = ({
             type='text'
             placeholder='Trabajo'
             name='job'
-            value={profile.job}
+            value={profile ? profile.job : ''}
             onChange={e => onChange(e)}
           />
         </div>
@@ -56,7 +56,7 @@ const Cpanel = ({
             type='text'
             placeholder='Telefono'
             name='phone'
-            value={profile.phone}
+            value={profile ? profile.phone : ''}
             onChange={e => onChange(e)}
           />
         </div>
@@ -65,7 +65,7 @@ const Cpanel = ({
             type='text'
             placeholder='Pais'
             name='country'
-            value={profile.country}
+            value={profile ? profile.country : ''}
             onChange={e => onChange(e)}
           />
         </div>
@@ -74,7 +74,7 @@ const Cpanel = ({
             type='text'
             placeholder='Direccion'
             name='address'
-            value={profile.address}
+            value={profile ? profile.address : ''}
             onChange={e => onChange(e)}
           />
         </div>
@@ -83,7 +83,7 @@ const Cpanel = ({
             type='text'
             placeholder='Codigo Postal'
             name='zip'
-            value={profile.zip}
+            value={profile ? profile.zip : ''}
             onChange={e => onChange(e)}
           />
         </div>

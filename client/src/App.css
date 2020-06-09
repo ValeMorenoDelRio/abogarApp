@@ -86,6 +86,7 @@ body {
 a {
   color: var(--grey-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
