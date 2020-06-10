@@ -21,7 +21,28 @@ router.get('/me', auth, async (req, res) => {
     }).populate('user', ['firstName', 'lastName','email']);
 
     if (!profile) {
-      return res.status(400).json({ msg: 'There is no profile for this user' });
+      const profileFields = {
+        user: req.user.id,
+        phone: '',
+        job: '',
+        country: '',
+        address: '',
+        zip: ''
+      };
+  
+      try {
+        // Using upsert option (creates new doc if no match is found):
+        let profile = await Profile.findOneAndUpdate(
+          { user: req.user.id },
+          { $set: profileFields },
+          { new: true, upsert: true }
+        );
+  
+        res.status(201).json(profile);
+      } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+      }
     }
 
     res.status(200).json(profile);
