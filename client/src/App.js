@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import Login from './components/auth/Login';
 import Routes from './components/routing/Routes';
 // Redux
@@ -30,6 +31,7 @@ const App = () => {
             <Route exact path='/' component={Login} />
             <Route component={Routes} />
           </Switch>
+          <Footer className='footer'/> 
         </Fragment>
       </Router>
     </Provider>

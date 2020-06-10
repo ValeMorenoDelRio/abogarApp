@@ -18,10 +18,14 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className='medium-font text-primary'>Inicio</h1>
-      <p className='lead'>
+      <h1 className='medium-font text-primary  '>Inicio</h1>
+      <p className='lead ' >
         Bienvenido {user && user.firstName}
       </p>
+      <div className='dash-display'>
+          <div><h3>Reuniones</h3></div>
+          <div><h3>Chat en vivo</h3></div>
+      </div>
     </Fragment>
   );
 };
